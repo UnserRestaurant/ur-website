@@ -10,12 +10,13 @@ zoom: 100%;
     background-attachment: fixed; background-size: 100% 100%;}
 .content{
     /* background-image: url(img/ur_outside.png); */
+    background-image: url(img/aussen-1.jpg);
     animation: content-slideShow 30s infinite;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
 }
-@keyframes content-slideShow {
+/* @keyframes content-slideShow {
       0% {
         background-image: url(img/aussen-2.jpg);
       }
@@ -29,16 +30,17 @@ zoom: 100%;
         background-image: url(img/aussen-2.jpg);
       }
       
-}
+} */
 .karten_background{
     /* background-image: url(img/ur_inside.jpg); */
+    background-image: url(img/innen-1.jpg);
     animation: karten-slideShow 30s infinite;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
 
 }
-@keyframes karten-slideShow {
+/* @keyframes karten-slideShow {
       0% {
         background-image: url(img/innen-1.jpg);
       }
@@ -51,7 +53,7 @@ zoom: 100%;
       100% {
         background-image: url(img/innen-2.jpg);
       }
-}
+} */
 
 .navbar{
     background-color: white;
