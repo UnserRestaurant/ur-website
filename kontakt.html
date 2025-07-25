@@ -1,0 +1,137 @@
+<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html>
+<head>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+ <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+<link rel="stylesheet" href="style.css" />
+<style>
+/* body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;
+    margin: 0;
+    padding: 0vh 1.5vw;} */
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+input[type=reset] {
+  background-color: #ff5e00;
+  color: white;
+  padding: 12px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #fa3403;
+}
+
+
+</style>
+</head>
+<body class="content-kontakt">
+<div class="navbar">
+        <a href="index.html"><img class="logo" src="./img/Logo_son.svg"/></a>
+        <label id="overlay" for="sidebar-active"></label>
+        <input type="checkbox" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-button">
+            <img class="menu_button" src="./img/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg">
+        </label>
+        <label id="overlay" for="sidebar-active"></label> 
+        <div class="header-links">
+            <label for="sidebar-active" class="close-sidebar-button">
+                <img class="x_button" src="./img/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg">
+            </label>
+            <a href="index.html">Home</a>
+            <!-- <a href="speisekarte.html">Speisekarte</a>
+            <a href="beveregeskarte.html">Getränke</a> -->
+            <a href="uber_uns.html">Über Uns</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>    
+    </div>
+
+<div></div> 
+<nav><center><h3>Kontakt Form</h3></center></nav>
+
+<div class="kontakt_container">
+  
+  <!-- <form id="kontakt-form" action="https://formsubmit.co/your-email-test@gmail.com" method="post"></form> -->
+  <form id="kontakt-form" action="https://api.web3forms.com/submit" method="POST" target="_blank">
+    <input type="hidden" name="access_key" value="6aeb3e61-93c2-4189-8c3f-a381c6ff777e">
+    <select id="kontakt-art" name="kontakt-art">
+      <option value="Frage(n)">Frage(n)</option>
+      <option value="Reservierung">Reservierung</option>
+      <option value="Beschwerden">Beschwerden</option>
+    </select>
+    <!-- <label for="fname" style="font-style:italic; font-size:x-large;padding: 2px;"><b>Vorname</b></label> -->
+    <input type="text" id="fname" name="firstname" placeholder="Vorname" required>
+
+    <!-- <label for="lname" style="font-style:italic; font-size:x-large;padding: 2px;"><b>Nachname</b></label> -->
+    <input type="text" id="lname" name="lastname" placeholder="Nachname" required>
+
+    <!-- <label for="kontakt-art" style="font-style:italic; font-size:x-large;padding: 2px;"><b>Kontakt Art</b></label> -->
+    
+
+    <!-- <label for="email-field" style="font-style:italic; font-size:x-large;padding: 2px;"><b>Email Addresse</b></label> -->
+    <input type="email" id="email-field" name="email"  placeholder="Email Addresse" required>
+
+    <!-- <label for="country" style="font-style:italic; font-size:x-large;padding: 2px;"><b>Staat</b></label> -->
+    <select id="country" name="country">
+      <option value="Deutschland">Deutschland</option>
+      <option value="Östreisch">Östreisch</option>
+      <option value="Kanada">Kanada</option>
+      <option value="USA">USA</option>
+    </select>
+
+    <!-- <label for="subject" style="font-style:italic; font-size:x-large;padding: 2px;"><b>Ihre Frage/Meinung</b></label> -->
+    <textarea id="subject" name="message" placeholder="Bitte! Hier schreiben.." style="height:200px" required></textarea>
+
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+    <input type="submit" value="Submit" >
+    <!-- <input type="submit" value="Submit" onclick="send_then_clear()"> -->
+    <input type="reset" value="Clear" onclick="clearFields()">
+  </form>
+  <script>
+    function send_then_clear(){
+      clearFields();
+    }
+    function clearFields(){
+      document.getElementById("kontakt-form").value = '';
+    }
+  </script>
+</div>
+
+</body>
+</html>
