@@ -10,7 +10,7 @@ zoom: 100%;
     background-attachment: fixed; background-size: 100% 100%;}
 .content{
     /* background-image: url(img/ur_outside.png); */
-    animation: content-slideShow 30s;
+/*     animation: content-slideShow 30s; */
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
     background-size: 100% 100%;
@@ -33,7 +33,7 @@ zoom: 100%;
 }
 .karten_background{
     /* background-image: url(img/ur_inside.jpg); */
-    animation: karten-slideShow 30s;
+/*     animation: karten-slideShow 30s; */
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
     background-size: 100% 100%;
