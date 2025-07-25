@@ -11,7 +11,7 @@ zoom: 100%;
 .content{
     /* background-image: url(img/ur_outside.png); */
     background-image: url(img/aussen-1.jpg);
-    animation: content-slideShow 30s infinite;
+/*     animation: content-slideShow 30s infinite; */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -34,7 +34,7 @@ zoom: 100%;
 .karten_background{
     /* background-image: url(img/ur_inside.jpg); */
     background-image: url(img/innen-1.jpg);
-    animation: karten-slideShow 30s infinite;
+/*     animation: karten-slideShow 30s infinite; */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
